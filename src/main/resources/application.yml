@@ -1,0 +1,25 @@
+# ---------------------------------------------------
+# Spring Boot Application Configuration
+# ---------------------------------------------------
+# This file configures the server and MongoDB connection.
+# Credentials and sensitive data should be loaded from environment variables for security.
+
+server:
+  port: 8085
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+  application:
+    name: mongodb
+  data:
+    mongodb:
+      # Use only the URI for MongoDB connection. Host, port, and database are included in the URI.
+      uri: ${MONGODB_URI:mongodb://admin:password@localhost:27017/mongodb}
+logging:
+  level:
+    root: DEBUG
+# ---------------------------------------------------
+# End of file
+# ---------------------------------------------------

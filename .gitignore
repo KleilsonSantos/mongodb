@@ -1,0 +1,46 @@
+# Documentação e arquivos de configuração devem ser versionados
+# (README.md, HELP.md, SECURITY_GUIDE.md, SECURITY_ANALYSIS.md)
+
+# Build e artefatos
+/target/
+*.jar
+*.war
+*.ear
+
+# Relatórios de cobertura e auditoria
+jacoco.exec
+/target/site/
+/target/surefire-reports/
+dependency-check-report.html
+
+# Arquivos de configuração locais
+.env
+
+# IDEs
+.idea
+*.iws
+*.iml
+*.ipr
+.vscode/
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+# Exceções para build e target em src
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+/.gitattributes
